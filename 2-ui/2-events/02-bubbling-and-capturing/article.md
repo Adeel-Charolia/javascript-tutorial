@@ -140,10 +140,10 @@ To catch an event on the capturing phase, we need to set the 3rd argument of `ad
 
 Actually, there are two possible values for that optional last argument:
 
-- If it's `false` (default), then the handler is set on the bubbling phrase.
-- If it's `true`, then the handler is set on the capturing phrase.
+- If it's `false` (default), then the handler is set on the bubbling phase.
+- If it's `true`, then the handler is set on the capturing phase.
 
-Note that while formally there are 3 phrases, the 2nd phrase ("target phase": the event reached the element) is not handled separately: handlers on both capturing and bubbling phrases trigger at that phase.
+Note that while formally there are 3 phases, the 2nd phase ("target phase": the event reached the element) is not handled separately: handlers on both capturing and bubbling phrases trigger at that phase.
 
 Handlers on the target element trigger last on the capturing state, and then trigger first on the bubbling stage.
 
